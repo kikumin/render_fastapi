@@ -42,8 +42,13 @@ def index():
             <title>Some HTML in here</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>こんにちは</h1>
+            <h2>こんにちは?</h2>
         </body>
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+@app.post("/present")
+async def give_present(present):
+    return {"response": f"こちら、サーバ。メリークリスマス！ {present}感謝する。報酬はクッキーだ。受け取れ！"}  # f文字列というPythonの機能を使っている
