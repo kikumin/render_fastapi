@@ -42,8 +42,11 @@ def index():
             <title>Some HTML in here</title>
         </head>
         <body>
-            <h1>こんにちは</h1>
-            <h2>こんにちは?</h2>
+            <h1>こちらホームページです</h1>
+            <h2>特に何もありません</h2>
+            <h4>*</h4>
+            <h4>**</h4>
+            <h4>***</h4>
         </body>
     </html>
     """
